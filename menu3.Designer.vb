@@ -24,7 +24,6 @@ Partial Class menu3
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(menu3))
         Me.Label18 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
@@ -78,18 +77,6 @@ Partial Class menu3
         Me.Label18.Size = New System.Drawing.Size(110, 120)
         Me.Label18.TabIndex = 164
         Me.Label18.Text = "<"
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.BackColor = System.Drawing.Color.Transparent
-        Me.Label17.Font = New System.Drawing.Font("MS Gothic", 72.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label17.Location = New System.Drawing.Point(1135, 301)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(110, 120)
-        Me.Label17.TabIndex = 163
-        Me.Label17.Text = ">"
         '
         'Button9
         '
@@ -564,7 +551,6 @@ Partial Class menu3
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1232, 723)
         Me.Controls.Add(Me.Label18)
-        Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button7)
@@ -619,7 +605,6 @@ Partial Class menu3
     End Sub
 
     Friend WithEvents Label18 As Label
-    Friend WithEvents Label17 As Label
     Friend WithEvents Button9 As Button
     Friend WithEvents Button8 As Button
     Friend WithEvents Button7 As Button
