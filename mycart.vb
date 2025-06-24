@@ -18,7 +18,6 @@ Public Class mycart
         End Try
     End Sub
     Public Sub cartLoad()
-
         Try
             query = "SELECT 
                      p.product_name AS ITEMS,
@@ -30,8 +29,10 @@ Public Class mycart
                     JOIN products p ON c.product_id = p.product_id
                     JOIN sizes s ON c.size_id = s.size_id
                     JOIN color co ON c.color_id = co.color_id
-                    WHERE c.customer_id = 1;"
-            dataAdapter = New SqlDataAdapter(query, connection)
+                    WHERE c.customer_id = @customerId;"
+            command = New SqlCommand(query, connection)
+            command.Parameters.AddWithValue("@customerId", login.customerId)
+            dataAdapter = New SqlDataAdapter(command)
             dataTable.Clear()
             dataAdapter.Fill(dataTable)
             DataGridView1.DataSource = dataTable
