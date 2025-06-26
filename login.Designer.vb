@@ -54,13 +54,13 @@ Partial Class login
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Stencil", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label1.Location = New System.Drawing.Point(131, 192)
+        Me.Label1.Font = New System.Drawing.Font("Stencil", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.WindowText
+        Me.Label1.Location = New System.Drawing.Point(123, 212)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(290, 95)
+        Me.Label1.Size = New System.Drawing.Size(306, 71)
         Me.Label1.TabIndex = 2
-        Me.Label1.Text = "LOG IN"
+        Me.Label1.Text = "---LOG IN---"
         '
         'Label2
         '
@@ -106,6 +106,7 @@ Partial Class login
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(552, 603)
+        Me.ControlBox = False
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -113,7 +114,7 @@ Partial Class login
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.DoubleBuffered = True
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.MaximizeBox = False
         Me.MaximumSize = New System.Drawing.Size(570, 650)
         Me.MinimizeBox = False
