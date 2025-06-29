@@ -62,6 +62,8 @@ Partial Class menu2
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Button11 = New System.Windows.Forms.Button()
+        Me.Button10 = New System.Windows.Forms.Button()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -556,6 +558,32 @@ Partial Class menu2
         Me.PictureBox1.TabIndex = 87
         Me.PictureBox1.TabStop = False
         '
+        'Button11
+        '
+        Me.Button11.BackColor = System.Drawing.SystemColors.WindowText
+        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button11.Font = New System.Drawing.Font("Stencil", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button11.ForeColor = System.Drawing.SystemColors.Window
+        Me.Button11.Location = New System.Drawing.Point(931, 54)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(96, 58)
+        Me.Button11.TabIndex = 127
+        Me.Button11.Text = "HOME"
+        Me.Button11.UseVisualStyleBackColor = False
+        '
+        'Button10
+        '
+        Me.Button10.BackColor = System.Drawing.SystemColors.WindowText
+        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button10.Font = New System.Drawing.Font("Stencil", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button10.ForeColor = System.Drawing.SystemColors.Window
+        Me.Button10.Location = New System.Drawing.Point(1033, 54)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(96, 58)
+        Me.Button10.TabIndex = 126
+        Me.Button10.Text = "MY CART"
+        Me.Button10.UseVisualStyleBackColor = False
+        '
         'menu2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -563,6 +591,9 @@ Partial Class menu2
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1232, 723)
+        Me.ControlBox = False
+        Me.Controls.Add(Me.Button11)
+        Me.Controls.Add(Me.Button10)
         Me.Controls.Add(Me.Label18)
         Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.Button9)
@@ -657,4 +688,6 @@ Partial Class menu2
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Button11 As Button
+    Friend WithEvents Button10 As Button
 End Class

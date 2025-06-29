@@ -65,4 +65,13 @@
             Button6.Enabled = True
         End If
     End Sub
+
+    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+        Me.Hide()
+        intro.Show()
+    End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        mycart.Show()
+    End Sub
 End Class

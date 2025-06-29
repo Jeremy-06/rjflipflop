@@ -16,6 +16,7 @@ Public Class menu0
     Dim price2 As Decimal = 396
     Dim price3 As Decimal = 385
 
+    Dim menu1 As New menu1()
     Private Sub Label17_Click(sender As Object, e As EventArgs) Handles Label17.Click
         Me.Hide()
         menu1.Show()
